@@ -14,8 +14,7 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\TripLogCleanServer.Domain\TripLogCleanServer.Domain.csproj" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\TripLogCleanServer.Domain\TripLogCleanServer.Domain.csproj" />
+	</ItemGroup>
 </Project>
