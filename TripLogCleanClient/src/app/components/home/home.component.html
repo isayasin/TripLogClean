@@ -1,0 +1,68 @@
+<!-- Body -->
+<div class="cards" id="cards"></div>
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New Trip Log</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="trip-title" class="col-form-label">Trip Title:</label>
+            <input id="trip-title" type="text" class="form-control" />
+            <label for="main-description" class="col-form-label"
+              >Description:</label
+            >
+            <textarea id="main-description" class="form-control"></textarea>
+            <label for="tags" class="col-form-label">Tags:</label>
+            <textarea id="tags" class="form-control"></textarea>
+            <label for="main-photo" class="col-form-label">Kapak Photo:</label>
+            <input id="main-photo" type="file" class="form-control" />
+          </div>
+        </form>
+        <br />
+        <hr class="border-3" />
+
+        <div id="tripPhotos">
+          <!-- Alt Başlıklar Buraya Geliyor -->
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-success"
+          style="margin-right: auto"
+          onclick="addTripPart()"
+        >
+          Gezi Parçası Ekle
+        </button>
+        <button
+          onclick="cancelTrip()"
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Cancel
+        </button>
+        <button onclick="Create()" type="button" class="btn btn-primary">
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
